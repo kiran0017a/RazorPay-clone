@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  overflow-x: hidden;
+}
+
+.corefeaturesection{
+  background-size: 100% 100%;
+  padding-top: 12rem;
+  padding-bottom: 12rem;       
+}
+
+.ctasection{
+background-size: 100% 100%;
+}
+
+.companiesList{
+animation: 10s infinite linear movecompany;
+}
+
+@keyframes movecompany {
+0%{
+top: 0;
+}
+100%{
+top: -50%;
+}
+}
+@media (max-width: 767px)  {
+    .corefeaturesection{
+      background-size: 120rem 100%;
+       padding-top: 15rem;
+       padding-bottom: 10rem;
+       margin-top: -104px;
+   }
+}
+@media (max-width: 1023px){
+  .ctasection{
+    background-size: 130% 100%;
+    min-height: 650px;
+  } 
+}
+@media (max-width: 767px){
+.ctasection{
+  background-size: 190% 100%;
+}
+}
+
+#wave{
+  visibility: hidden;
+  position: absolute;
+  top: 110px;
+  right: -30px;
+}
+
+#wave1{
+  visibility: hidden;
+  position: absolute;
+  top: 110px;
+  right: -33px;
+}
+
+.featureCard2:hover{
+  scale: 1.05;
+  transition: all 0.8s ease;
+  #wave{
+    visibility: visible;
+    transition: all 0.8s ease;
+  }
+}
+
+.featureCard:hover{
+  scale: 1.05;
+  transition: all 0.8s ease;
+  #wave1{
+    visibility: visible;
+    transition: all 0.8s ease;
+  }
+}
+
+
+
+
